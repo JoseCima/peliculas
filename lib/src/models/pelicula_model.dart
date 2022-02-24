@@ -68,10 +68,19 @@ class Pelicula {
     adult            = json['adult'];
     overview         = json['overview'];
     releaseDate      = json['release_date'];
-
+    
 
   }
 
+   getPosterIMG(){
+
+     if(posterPath == null){
+       return 'https://dicesabajio.com.mx/wp-content/uploads/2021/06/no-image.jpeg';
+     }else{
+      return 'https://image.tmdb.org/t/p/w500/$posterPath';
+     }
+    
+   }
 
 }
 
