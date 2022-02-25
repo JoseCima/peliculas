@@ -80,6 +80,7 @@ final peliculasProvider = new PeliculasProvider();
           child: Text('Populares', style: Theme.of(context).textTheme.subtitle1)
           ),
           SizedBox(height: 5.0),
+          
           FutureBuilder(
            future: peliculasProvider.getPopulares(),
            builder: (BuildContext context, AsyncSnapshot snapshot) {
